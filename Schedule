@@ -1,7 +1,6 @@
-**Week 1** - Framing the Research Problem
+WEEK 1 - Framing the Research Problem
 Define the API evolution problem within location-based systems.
-Goals
-- Identify key design goals:
+Identify key design goals:
 - Backward compatibility
 - Extensibility
 - Clarity of resources
@@ -14,7 +13,7 @@ Tasks
 - Identify planned requirement changes for the PinTrails case study.
 - Frame the architectural problem for the project.
 
-Week 2 — Foundations of API Design
+WEEK 2 — Foundations of API Design
 Gather Readings / Resources
 Topics to research:
 - REST architectural style
@@ -30,10 +29,9 @@ Tasks
 Deliverable
 - An API design document describing resources, routes, request/response structure
 
-Week 3 — Alternative API Architectures
+WEEK 3 — Alternative API Architectures
 Compare REST to other API paradigms such as GraphQL, gRPC, RPC-style APIs
-Tasks
-- Study the differences between REST and alternative architectures.
+Study the differences between REST and alternative architectures.
 Compare
 - flexibility
 - performance
@@ -42,7 +40,7 @@ Compare
 Analysis
 - Determine whether the PinTrails system might benefit from an alternative architecture.
 
-Week 4 — Endpoint Design and Request Patterns
+WEEK 4 — Endpoint Design and Request Patterns
 Examine best practices for route design.
 Topics
 - RESTful route structure
@@ -64,7 +62,7 @@ GET /artifacts/{id}
 GET /artifacts?lat=...&lon=...&radius=...
 POST /tours
 
-Week 5 — API Evolution and Versioning
+WEEK 5 — API Evolution and Versioning
 Study how APIs evolve over time.
 Topics
 API versioning strategies:
@@ -82,7 +80,7 @@ Suggested Resources
 - Microsoft API versioning guidelines
 - Stripe API changelog practices
 
-Week 6 — Data Modeling and Schema Evolution
+WEEK 6 — Data Modeling and Schema Evolution
 Understand how data models affect API design.
 Topics
 - schema evolution
@@ -96,7 +94,7 @@ Determine whether changes are:
 - breaking
 Explore techniques for evolving schemas safely.
 
-Week 7 — Performance and Scalability Considerations
+WEEK 7 — Performance and Scalability Considerations
 Understand how API design impacts system performance.
 Topics
 - query complexity
@@ -111,7 +109,7 @@ Analyze tradeoffs between:
 - response size
 - query complexity
 
-Week 8 — Synthesis and Final Report
+WEEK 8 — Synthesis and Final Report
 Combine research insights with the PinTrails case study.
 Final Deliverables
 - A research-style report covering:
