@@ -1,0 +1,122 @@
+**Week 1** - Framing the Research Problem
+Define the API evolution problem within location-based systems.
+Goals
+- Identify key design goals:
+- Backward compatibility
+- Extensibility
+- Clarity of resources
+- Performance
+Research Questions
+- Is there a structured methodology for API design?
+- How do APIs evolve without breaking existing clients?
+- What tradeoffs exist between flexibility and clarity?
+Tasks
+- Identify planned requirement changes for the PinTrails case study.
+- Frame the architectural problem for the project.
+
+Week 2 — Foundations of API Design
+Gather Readings / Resources
+Topics to research:
+- REST architectural style
+- Resource-oriented design
+- HTTP methods: GET, POST, PUT, DELETE, PATCH
+- URI design conventions
+- Statelessness
+- Idempotency
+Tasks
+- Study REST constraints and their implications.
+- Analyze how resources should be structured in APIs.
+- Evaluate whether PinTrails’ current model (artifacts, locations, tours) follows resource-oriented design principles.
+Deliverable
+- An API design document describing resources, routes, request/response structure
+
+Week 3 — Alternative API Architectures
+Compare REST to other API paradigms such as GraphQL, gRPC, RPC-style APIs
+Tasks
+- Study the differences between REST and alternative architectures.
+Compare
+- flexibility
+- performance
+- client complexity
+- schema evolution
+Analysis
+- Determine whether the PinTrails system might benefit from an alternative architecture.
+
+Week 4 — Endpoint Design and Request Patterns
+Examine best practices for route design.
+Topics
+- RESTful route structure
+- query parameters vs resource paths
+- filtering
+- sorting
+- pagination
+- POST vs PUT vs PATCH semantics
+Tasks
+Study common API patterns for:
+- search endpoints
+- filtering
+- pagination
+Evaluate the “nearby artifacts” endpoint in PinTrails and redesign it using best practices learned.
+Deliverable: A revised endpoint specification.
+Example structure:
+GET /artifacts
+GET /artifacts/{id}
+GET /artifacts?lat=...&lon=...&radius=...
+POST /tours
+
+Week 5 — API Evolution and Versioning
+Study how APIs evolve over time.
+Topics
+API versioning strategies:
+- URI versioning
+- Header versioning
+- Semantic versioning
+Other concepts:
+- backward compatibility
+- deprecation strategies
+Tasks
+- Study real-world API evolution examples.
+- Apply versioning strategies to the PinTrails API.
+- Analyze how ranked discovery could be added without breaking existing clients.
+Suggested Resources
+- Microsoft API versioning guidelines
+- Stripe API changelog practices
+
+Week 6 — Data Modeling and Schema Evolution
+Understand how data models affect API design.
+Topics
+- schema evolution
+- additive vs breaking changes
+- resource relationships
+Tasks
+Analyze how structured tour stops could be added to the API.
+Determine whether changes are:
+- additive
+- backward compatible
+- breaking
+Explore techniques for evolving schemas safely.
+
+Week 7 — Performance and Scalability Considerations
+Understand how API design impacts system performance.
+Topics
+- query complexity
+- caching strategies
+- pagination vs large payloads
+- API latency considerations
+Tasks
+- Study API performance best practices.
+- Evaluate scalability implications of the PinTrails nearby endpoint.
+Analyze tradeoffs between:
+- richer responses
+- response size
+- query complexity
+
+Week 8 — Synthesis and Final Report
+Combine research insights with the PinTrails case study.
+Final Deliverables
+- A research-style report covering:
+  - API design foundations
+  - architectural comparisons
+  - evolution strategies
+  - performance considerations
+- Diagrams of API architecture and evolution
